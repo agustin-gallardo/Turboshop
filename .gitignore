@@ -1,0 +1,6 @@
+/env
+/train/modelo_ner_repuestos/
+/train/ner-transformer-output/
+# Ignore Python cache files
+__pycache__/
+*.xlsx
