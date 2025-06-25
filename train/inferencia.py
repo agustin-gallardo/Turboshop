@@ -10,7 +10,7 @@ model = AutoModelForTokenClassification.from_pretrained(model_path)
 ner_pipeline = pipeline("ner", model=model, tokenizer=tokenizer, aggregation_strategy="first")
 
 # ====== Texto de prueba ======
-texto = "TAPA DISTRIBUCION SS ACTYON 12> GEN"
+texto = "MASCARA B2500 2000-2002  NEGRA"
 
 # ====== Inferencia ======
 predicciones = ner_pipeline(texto)
